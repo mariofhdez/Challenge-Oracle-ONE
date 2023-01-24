@@ -1,0 +1,196 @@
+* {
+    background: #f3f5fc;
+    font-size: 16px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    /* outline: 1px solid red; */
+}
+
+header {
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.encriptador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.encriptador textarea {
+    margin-top: 2em;
+    width: 80%;
+    justify-content: center;
+    border: 0px;
+    font-size: 2em;
+    text-align: left;
+    resize: none;
+    color: #OA3871;
+}
+
+.encriptador .informativo {
+    height: 1.5em;
+    line-height: 1em;
+    margin-top: 3em;
+    width: 80%;
+    color: #67808E;
+    text-align: left;
+    align-items: center;
+
+}
+
+.encriptador .botones {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.encriptador .botones .btn {
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.625em;
+    width: 45%;
+    height: 4em;
+}
+
+.encriptador .botones .boton-primario {
+    background: #0A3871;
+    color: #fff;
+}
+
+.encriptador .botones .boton-secundario {
+    color: #0A3871;
+    background: #d8def8;
+}
+
+.lateral {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 4em;
+    border-radius: 2em;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.lateral .munheco {
+    width: 100%;
+    background: #fff;
+}
+
+.lateral .mensaje-encriptado {
+    background: #fff;
+    width: 95%;
+}
+
+.lateral .titulo_mensaje {
+    background: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #0A3871;
+}
+
+.lateral .textoFinal {
+    width: 100%;
+    background: #fff;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    color: #495057;
+    resize: none;
+    border: 0px;
+    margin-bottom: 25px;
+    min-height: 172px;
+}
+
+.lateral .btn_copiar {
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.625em;
+    width: 95%;
+    color: #0A3871;
+    background: #d8def8;
+    margin-top: 257px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background: #0A3871;
+    color: #fff;
+    padding: 0.3125em;
+}
+
+footer p {
+    background: #0A3871;
+    font-size: 0.875em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 769px) and (orientation: Portrait) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    .encriptador textarea {
+        width: 90%;
+        min-height: 16em;
+    }
+
+    .encriptador .botones .btn {
+        width: 45%;
+    }
+
+    .lateral {
+        margin: 1.5em;
+        width: 90%;
+        padding: 2em;
+        display: inline;
+    }
+
+    .lateral .mensaje-encriptado{
+        width: 100%;
+    }
+
+    .lateral .dibujo {
+        display: none;
+    }
+
+    .lateral .textoFinal{
+        min-height: 0;
+    }
+
+    .lateral .btn_copiar{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .encriptador textarea {
+        min-height: 10em;
+    }
+
+    .encriptador .botones {
+        flex-wrap: wrap;
+    }
+
+    .encriptador .botones .btn {
+        width: 90%;
+        margin: 0.3125em;
+    }
+}
